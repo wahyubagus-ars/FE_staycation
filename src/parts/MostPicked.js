@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function MostPicked(props) {
   return (
-    <section className="container" ref={props.refMostPicked} style={{height: 2000}}>
+    <section className="container" ref={props.refMostPicked}>
       <h4 className="mb-3">Most Picked</h4>
       <div className="container-grid">
         { props.data.map((item, index) => {
@@ -18,7 +18,7 @@ export default function MostPicked(props) {
                   <img src={item.imageUrl} alt={item.name} className="img-cover"/>
                 </figure>
                 <div className="meta-wrapper">
-                  <Button type="link" className="streched-link d-block text-white" href={`/properties/${item._id}`}>
+                  <Button type="link" className="stretched-link d-block text-white" href={`/properties/${item._id}`}>
                     <h5>{item.name}</h5>
                   </Button>
                   <span>{item.city}, {item.country}</span>
