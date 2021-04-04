@@ -114,7 +114,10 @@ section.most-picked{
   width: 100%;
 }
 .card {
-  height: 100%;
+  &.bordered {
+    border: 1px solid $gray-200;
+  }
+  border-radius: 15px;
   .tag {
     z-index: 3;
     font-size: 0.875rem;
@@ -236,5 +239,12 @@ footer {
     margin: 50px 0;
     font-weight: 300;
     color: $gray-500;
+  }
+}
+
+main {
+  p {
+    color: $gray-500;
+    font-weight: 300;
   }
 }
