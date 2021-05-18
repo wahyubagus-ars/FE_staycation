@@ -6,6 +6,7 @@ import DetailPage from 'pages/DetailPage';
 import Example from 'pages/Example';
 import Checkout from 'pages/Checkout';
 
+
 function App() {
   return (
     <div className="App">
