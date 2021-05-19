@@ -5,6 +5,7 @@ import LandingPage from 'pages/LandingPage';
 import DetailPage from 'pages/DetailPage';
 import Example from 'pages/Example';
 import Checkout from 'pages/Checkout';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
         <Route exact path="/properties/:id" component={DetailPage}></Route>
         <Route path="/checkout" component={Checkout}></Route>
       </Router>
+
+      <ToastContainer />
     </div>
   );
 }

@@ -18,7 +18,7 @@ class LandingPage extends Component {
     window.title = "Staycation | Home"
 
     if (!this.props.page.landingPage) {
-      this.props.fetchPage('https://staycation-wahyubagus.herokuapp.com/api/v1/member/landing-page', 'landingPage')
+      this.props.fetchPage('/landing-page', 'landingPage')
     }
   }
 
