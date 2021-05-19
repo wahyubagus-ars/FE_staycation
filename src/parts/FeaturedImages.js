@@ -19,7 +19,7 @@ export default function FeaturedImage({ data }) {
                     <img
                       className="img-cover"
                       // src={`${process.env.REACT_APP_HOST}/${item.url}`}
-                      src={item.url}
+                      src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
                       alt={item._id}
                     />
                   </figure>
